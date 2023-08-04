@@ -1,13 +1,16 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root{
+  --bg:#101113;
+  --bg-2:#242529;
+  --cardtype3-color:rgba(255, 255, 255, 0.65);
+
+  --w-text:#FFFFFF;
+  --g-text:#808080;
+  --p-text-family: 'Acme', sans-serif;
+  --blue:#B9E7E5;
+  --yellow: #F4FCC1;
+  --pink: #F1D2EF;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

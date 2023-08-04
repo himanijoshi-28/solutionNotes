@@ -1,0 +1,33 @@
+.cardType5
+{width: 14rem;
+height: 19rem;
+flex-shrink: 0;
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.49);
+margin: 2rem 0.2rem;
+overflow: hidden;
+}
+.cardType5>img{
+    width: 7rem;
+    height: 8rem;
+    
+}
+
+.mainheading
+{
+    color: #000;
+font-family: Acme;
+font-size:4rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.subheading{
+    color: #000;
+text-align: center;
+font-family: Acme;
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

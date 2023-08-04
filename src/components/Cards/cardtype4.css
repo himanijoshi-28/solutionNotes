@@ -1,0 +1,31 @@
+.cardtype4-div
+{  
+    width: 8rem;
+height: 8rem;
+
+border-radius: 20px;
+margin: 1rem  ;
+background: #FBA7A5;
+
+flex-direction: column;
+
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner-text{
+  color: #000;
+  font-family: Acme;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;  
+}
+.no{
+  color: #000;
+  font-family: Acme;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
