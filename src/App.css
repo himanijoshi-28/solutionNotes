@@ -1,0 +1,25 @@
+.flex__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex__start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+.flex__end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+.flex__spacebtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.flex__spaceeven{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}

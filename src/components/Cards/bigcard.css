@@ -1,0 +1,41 @@
+.div1 {
+  width: 17rem;
+  height: 60vh;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background: #f4fcc1;
+  margin: 3rem 1rem;
+  padding: 0.5rem;
+  position: relative;
+  z-index: 10;
+}
+.smallcard {
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #f1d2ef;
+  margin: 1rem 0rem;
+  width: 13rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div1 > p {
+  font-size: 4rem;
+  text-align: center;
+  margin: 0 1rem;
+}
+.smallcard-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* margin:0.5rem; */
+}
+
+.smallcard > p {
+  font-size: 2rem;
+}

@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: var(--p-text-family);
+}
+.app__header {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg);
+}
+.app__header-img img {
+  width: 35rem;
+  height: 35rem;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+/* border-radius: 10px;
+background: #B9E7E5; */
+
+.app__header-content {
+  margin-left: 2rem;
+  width: 40%;
+  height: 90vh;
+}
+.app__header-content_years-block {
+  display: flex;
+  margin-left: 2rem;
+  /* margin:1rem 0.5rem; */
+}
+.app__header-content-block {
+  border-radius: 10px;
+  margin: 1.5rem;
+  width: fit-content;
+  align-items: center;
+  font-size: 3rem;
+  height: 5rem;
+  /* flex-shrink: 0; */
+  padding: 1rem;
+}
+.p1 {
+  color: var(--blue);
+
+  /* flex-shrink: 0; */
+}
+.p2 {
+  color: var(--yellow);
+
+  /* flex-shrink: 0; */
+}
+.p3 {
+  color: var(--pink);
+
+  /* flex-shrink: 0; */
+}
+.p1-bg {
+  background-color: var(--blue);
+
+  /* flex-shrink: 0; */
+}
+.p2-bg {
+  background-color: var(--yellow);
+
+  /* flex-shrink: 0; */
+}
+.p3-bg {
+  background-color: var(--pink);
+
+  /* flex-shrink: 0; */
+}
+
+.app__header-content_years {
+  width: 6rem;
+  height: 7rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  flex-shrink: 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 33px;
+  padding: 10px;
+  /* background: #B9E7E5; */
+}

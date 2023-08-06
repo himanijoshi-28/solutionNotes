@@ -1,0 +1,30 @@
+/* bigcard2 */
+.smallcardtwo {
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: var(--pink);
+
+  margin: 1rem 0rem;
+  width: 13rem;
+  height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  text-align: center;
+}
+.smallcardtwo > p {
+  font-size: 3rem;
+}
+.divtwo {
+  width: 17rem;
+  height: 60vh;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background: #f4fcc1;
+  margin: 3rem 1rem;
+  padding: 0.5rem;
+  position: relative;
+  z-index: 10;
+}
