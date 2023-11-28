@@ -1,4 +1,4 @@
-import './procard.css'
+import "./bigcard.css";
 const ProCard = (props) => {
   return (
       <div className="card">

@@ -6,11 +6,21 @@
     z-index: 10;
 }
 
-.prac__container{
+.prac__container, .pro__container{
     width: 100vw;
     position: absolute;
-    margin: 10vh 6vw;
+    margin: 10vh 0;
     z-index: 10;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .prac__container, .pro__container{
+        height: 90vh;
+        overflow-y: scroll;
+        position: relative;
+        margin-top: 0;
+    }
 }
 
 .svg1{

@@ -1,32 +1,19 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import "./fypage.css";
-import SecondCard from "../components/Cards/SecondCard";
-import BigCard from '../components/Cards/BigCard';
-// import Sec from "./Cards/";
+import "./practical.css";
+import Navbar from "../../components/Navbar";
+import PracCard from "../../components/Cards/PracCard";
 
-const Fypage = () => {
+const SyPractical = () => {
   return (
-    <>
-      <div className="bg">
-        <Navbar />
-        <div className="app2__header ">
-          <div className="heading flex__center">
-            <div className="app2__header-heading ">
-              <p className="app2__headeer-heading_Text">Second Year</p>
-            </div>
-          </div>
+    <div className="body">
+      <Navbar />
+      <div className="prac__container">
+        <PracCard subject="R" />
+        <PracCard subject="Java" />
+        <PracCard subject="Figma" />
+        <PracCard subject="Android" />
 
-          <div className="app2__section2">
-            <div className="cards flex__spaceeven">
-               
-              <BigCard sem="Sem3" heading1="Practicals" heading2="Projects"/> 
-              <SecondCard message="A Guide to 2nd Year...."/>
-              <BigCard sem="Sem4" heading1="Practicals" heading2="Projects"/>
-            </div>
-          </div>
-        </div>
-        <svg
+      </div>
+      <svg
         className="sy_svg1"
         viewBox="0 0 104 173"
         fill="none"
@@ -59,9 +46,8 @@ const Fypage = () => {
           fill="#07A1CE"
         />
       </svg>
-      </div>
-    </>
+    </div>
   );
 };
 
-export default Fypage;
+export default SyPractical;

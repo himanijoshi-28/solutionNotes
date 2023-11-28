@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { logo, profile, heroImg } from "../constant/Images";
+import { logo } from "../constant/Images";
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose } from "react-icons/ai";
-
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [toggleMenu,setToggleMenu]=useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <nav>
       <div className="app__navbar flex__spacebtn">
@@ -15,58 +14,48 @@ const Navbar = () => {
         </div>
         <div className="app__navbar-links flex__spacebtn ">
           <li className="app__navbar-links_link flex__center">
-            <a href="#">Home</a>
+            <NavLink to={"/"}>Home</NavLink>
           </li>
           <li className="app__navbar-links_link">
-            <a href="#">About</a>
+            <NavLink to={"/about"}>About</NavLink>
           </li>
           <li className="app__navbar-links_link">
-            <a href="#">Services</a>
+            <NavLink to={"/"}>Services</NavLink>
           </li>
           <li className="app__navbar-links_link">
-            <a href="#">Guide</a>
+            <NavLink to={"/"}>Guide</NavLink>
           </li>
-        </div>
-        <div className="app__navbar-profile flex__end">
-          <img src={profile} alt="Your Profile" />
         </div>
 
         <div className="app__navbar-smallscreen">
-        <GiHamburgerMenu
-          color="#fff "
-          fontSize={27}
-          onClick={() => setToggleMenu(true)}
-        />
+          <GiHamburgerMenu
+            color="#fff "
+            fontSize={27}
+            onClick={() => setToggleMenu(!toggleMenu)}
+          />
 
-        {/* {toggleMenu && (
-          <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-            <AiOutlineClose
-              fontSize={27}
-              className="overlay__close"
-              onClick={() => setToggleMenu(false)}
-            />
-
-            <ul className="app__navbar-smallscreen_links">
-              <li >
-                <a href="#">Home</a>
-              </li>
-              <li >
-                <a href="#">About</a>
-              </li>
-              <li >
-                <a href="#">Menu</a>
-              </li>
-              <li >
-          <a href="#">Awards</a>
-        </li>
-              <li >
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        )} */}
-
-      </div>
+          {toggleMenu && (
+            <div className="app__navbar-smallscreen_overlay flex__center slide-bottom" >
+              <ul className="app__navbar-smallscreen_links">
+                <li>
+                  <Link to={"/"}>Home</Link>
+                </li>
+                <hr/>
+                <li>
+                  <Link to={"/about"}>About</Link>
+                </li>
+                <hr/>
+                <li>
+                  <Link to={"/"}>Service</Link>
+                </li>
+                <hr/>
+                <li>
+                  <Link to={"/"}>Guide</Link>
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
     </nav>
   );

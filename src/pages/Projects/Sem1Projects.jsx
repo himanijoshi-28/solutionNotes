@@ -1,4 +1,4 @@
-import "./project.css";
+import "../practical/practical.css";
 import Navbar from "../../components/Navbar";
 import ProCard from "../../components/Cards/ProCard";
 
